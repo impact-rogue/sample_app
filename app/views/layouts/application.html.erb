@@ -6,21 +6,7 @@
   <%= render "layouts/stylesheets" %>  
 </head>
 <body>
-	<nav class="navbar navbar-fixed-top">		
-		<div class="navbar-inner">
-			<div class="container">
-				<span class="brand">Pruebas ROR</span>
-				<ul class="nav">
-					<li><%= link_to "Home", home_path %></li>
-					<li><%= link_to "About", about_path %></li>
-					<li><%= link_to "Sign in", contact_path %></li>
-				</ul>
-			</div>
-		</div>		
-    <ul class="breadcrumb subnav">
-		  <li> <%= title %></li>		  
-	  </ul>
-	</nav>
+	<%= render "layouts/header" %>	
 	<section class="container">					
 		<div class="hero-unit">
 			<%= yield %>
