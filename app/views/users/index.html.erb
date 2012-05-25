@@ -1,0 +1,19 @@
+<% 
+	@user.each do |usuario| 
+%>
+	<div class="row-fluid">
+		<div class="span6">
+			<%= usuario.name %> 
+		</div>
+		<div class="span4 offset2">
+			<div class="btn-group">
+			    <%= link_to "Mas info", (users_path + "/#{usuario.id}"), :class => 'btn' %> </button>
+			    <button class="btn">Modificar</button>
+			    <button class="btn">Eliminar</button>
+		    </div>
+			
+		</div>
+	</div>
+<%
+	end
+%>
